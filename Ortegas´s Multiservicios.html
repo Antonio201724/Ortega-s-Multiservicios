@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="icon" href="Icono.ico"><title> Ortega´s Multiservicios</title>
+</head>
+
+<style>
+*,
+*::after,
+*::before{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+ display: flex;
+ flex-direction: column;
+ min-height: 100vh;
+}
+
+.logo{
+    text-align: center;
+}
+img{
+    max-width: 100%;
+    height: auto;
+}
+
+.Marca{
+    max-width: 100vh;
+}
+
+main{
+    flex-grow: 1;
+}
+
+.titulares{
+    padding: .6rem;
+    background-color: #222;
+    color: #eee;
+    text-align: center;
+    align-items: center;
+}
+
+.hero-image{
+     background-image: url(Oowww-Shit.png);
+     min-height: 100vh;
+     background-repeat: no-repeat;
+     color: #ffff;
+}
+
+.hero-image h1{
+    font-size: 5vw;
+    
+}
+
+.hero-image div{
+    background-color: rgba(0, 0, 0, .75);
+    min-height: inherit;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+a{
+    text-decoration: none;
+    color: #eee;
+   
+}
+
+.menu ul{
+        list-style-type: none;
+    }
+
+p{
+    display: inline-block;
+    padding: .6rem;
+}
+
+h2{
+    text-align: center;
+}
+
+@media screen and (min-width: 1024px) {
+    .header{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .menu ul{
+        display: flex;
+    }
+
+    .menu li{
+        padding: .5rem;
+    }
+
+    .flex-container{
+         display: flex;
+         align-items: center; 
+    }
+
+    .flex-item{
+        flex: 1 1 100%;
+    }
+
+    .flex-row-reverse{
+        flex-direction: row-reverse;
+    }
+
+}
+
+</style>
+
+<body>
+    
+    <header class="titulares header">
+        <img src="logo.png" alt="Marca">
+        <h1 class="logo">Ortega´s Multiservicios c.a</h1>   
+        <nav class="menu">
+            <ul>
+                <li><a href="#Info">Acerca de</a></li>
+                <li><a href="#Servicios">Servicios</a></li>
+                <li><a href="#">Productos</a></li>
+                <li><a href="#Contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <!-- <article class="hero-image">
+            <div>
+                <h1>FLEXBOX ES LA HOSTIA</h1>
+            </div>    
+        </article> -->
+        <section class="flex-container flex-row-reverse">  
+            <article class="flex-item">
+                <img src="Logo Completo.PNG" class="Marca" alt="Nuestra Insignia">
+            </article>
+
+            <article class="flex-item">
+                <img src="Info.PNG" id="Info" alt="Quienes Somos?">     
+            </article>   
+        </section>
+
+        <section class="flex-container" >
+            <article class="flex-item" >
+ 
+            <h1>Ubicanos!</h1> <br>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d124811.67294192217!2d-86.3805039!3d12.1555501!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f7156916361d4ff%3A0xc598ec3e4dae82a6!2sAnexo%20Las%20Brisas%2C%20Managua%2C%20Nicaragua!5e0!3m2!1ses!2sve!4v1613945744999!5m2!1ses!2sve" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+
+            </article>
+
+            <article class="flex-item">
+
+            <h1>Nuestros Horarios</h1><br>
+            <img src="Horario.png" alt="Nuestros Horarios" class="horarios">
+    
+            </article>
+
+        </section>
+
+        <section class="flex-container ">
+            <article class="flex-item">
+                <h2>Nuestros Servicios para ti!</h2>
+                <!-- <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dignissimos odit quaerat numquam quibusdam sint distinctio dolorum, quis sapiente veniam corporis eos et? Sequi fuga asperiores quos vero temporibus, omnis saepe.</p> -->
+               </article>
+            <article class="flex-item">
+                <img src="Servicios.PNG" id="Servicios" alt="Nuestros Servicios para ti!">
+            </article>          
+        </section>
+
+        <section class="flex-container flex-row-reverse">
+            <article class="flex-item">
+                <!-- <h2>Titulo</h2> -->
+                <!-- <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dignissimos odit quaerat numquam quibusdam sint distinctio dolorum, quis sapiente veniam corporis eos et? Sequi fuga asperiores quos vero temporibus, omnis saepe.</p> -->
+               </article>
+            <article class="flex-item">
+                <img src="Servicios 2.PNG" id="Contacto" alt="Servicios para complacerte">
+            </article>          
+        </section>
+
+        <section class="flex-container ">
+            <article class="flex-item">
+                <h2>Cuentanos que te gustaria?</h2>
+                <!-- <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dignissimos odit quaerat numquam quibusdam sint distinctio dolorum, quis sapiente veniam corporis eos et? Sequi fuga asperiores quos vero temporibus, omnis saepe.</p> -->
+               </article>
+            <article class="flex-item">
+                <img src="Contacto.PNG" id="Contacto" alt="">
+            </article>          
+        </section>
+        
+    </main>
+
+    <footer class="titulares">
+        <p> Copyright ©  2021</p> <p>Todos los derechos Reservados</p> <p> Ortega´s Multiservicios ® c.a </p>
+    </footer>
+
+</body>
+</html>

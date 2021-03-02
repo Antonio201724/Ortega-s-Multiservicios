@@ -1,0 +1,11 @@
+*,
+*::after,
+*::before{
+    box-sizing: border-box;
+}
+
+.flex-container{
+    display: flex;
+    flex-flow: row wrap;
+}
+
